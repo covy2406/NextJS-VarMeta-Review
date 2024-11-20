@@ -1,0 +1,1 @@
+const logo = "https://theme-land.com/sapp/demo/assets/img/logo/logo.png";

@@ -50,13 +50,27 @@ export default {
   				'3': 'hsl(var(--chart-3))',
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
-  			}
+  			},
+				'bg-color': 'rgb(206 195 243)',
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
+			backgroundImage: {
+				'banner-image': 'url(https://theme-land.com/sapp/demo/assets/img/content/welcome-bg-3.jpg)'
+			},
+			keyframes: {
+        animateBounce: {
+          '0%': { top: '0' },
+          '50%': { top: '25px' },
+					'100%': { top: '0' },
+        }
+      },
+			animation: {
+        bounce: 'animateBounce 2.5s infinite',
+      },
   	}
   },
   plugins: [require("tailwindcss-animate")],
