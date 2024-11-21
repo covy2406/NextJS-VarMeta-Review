@@ -4,7 +4,8 @@ import { LuBookCopy } from "react-icons/lu";
 import { LuBadgeCheck } from "react-icons/lu";
 import { LuRepeat2 } from "react-icons/lu";
 import { LuClock } from "react-icons/lu";
-import { thumbnail1 } from '../../../public/images/logo';
+import { RxArrowRight } from "react-icons/rx";
+import assetsBgImage from '../../../public/images/logo';
 
 export const styleIcons = [
   {
@@ -34,19 +35,24 @@ export const styleIcons = [
 ]
 
 const OrganizeMedia = () => {
+  const { thumbnail1 } = assetsBgImage;
   return (
-    <div className='flex max-w-[1320px] w-full bg-fixed py-[130px] mx-auto'>
+    <div className='flex max-w-[73.125rem] w-full bg-fixed py-[8.125rem] mx-auto'>
       <div className='w-1/2'>
         <p className='text-black font-bold mb-6 text-5xl leading-[1.2em]'>Organize all your media content easily</p>
         <ul>
           {styleIcons.map((item) => (
             <li className='flex items-center' key={item.id}>
-              <div className='my-6 mr-4 text-2xl rounded-sm shadow-md  text-primary-color'>
+              <div className='my-6 mr-4 text-2xl rounded-sm shadow-md text-primary-color'>
                 <span className='flex items-center justify-center h-14 w-14'>{item.icon}</span>
               </div>
               <span className="text-md">{item.description}</span>
             </li>
           ))}
+          <button className='flex hover:bg-hover-btn hover:text-white hover:btn-right items-center py-4 px-[2.125rem] border border-solid rounded-full border-primary-color'>
+            <span className='mr-1 text-lg font-medium'>Learn More</span>
+            <RxArrowRight size={24}/>
+          </button>
         </ul>
       </div>
       <div className='flex flex-col items-center justify-center w-1/2 align-middle'>

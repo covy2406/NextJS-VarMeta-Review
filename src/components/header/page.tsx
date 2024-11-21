@@ -3,9 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect } from "react";
 import { LuSearch } from "react-icons/lu";
-import { logo } from "../../../public/images/logo";
+import assetsBgImage from "../../../public/images/logo";
 
 const Header = () => {
+  const { logo } = assetsBgImage;
   const [scrolling, setScrolling] = React.useState(false);
   useEffect(() => {
     const handleScroll = () => {
