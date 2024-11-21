@@ -6,8 +6,10 @@ import assetsBgImage from "../../../public/images/logo";
 const Banner = () => {
   const { iphone, brand, googleplay, appstore } = assetsBgImage;
   return (
-    <div className="relative bg-combined-banner has-overlay bg-cover bg-scroll bg-no-repeat bg-center h-full py-[8.125rem]">
-      <div className="max-w-[73.125rem] grid-cols-2 flex mx-auto align-middle">
+    <div className="relative bg-banner-image has-overlay bg-cover bg-scroll bg-no-repeat bg-center h-full py-[8.125rem]">
+      {/* Overlay */}
+      {/* <div className="absolute inset-0 bg-bg-overlay"></div> */}
+      <div className=" max-w-[73.125rem] grid-cols-2 flex mx-auto align-middle">
         <div className="relative z-10 w-1/2 px-2 animate-bounce">
           <Image
             className="align-middle "
@@ -17,7 +19,7 @@ const Banner = () => {
             src={iphone}
           />
         </div>
-        <div className="flex flex-col items-start justify-center w-1/2 px-2 text-left align-middle">
+        <div className="flex flex-col z-10 items-start justify-center w-1/2 px-2 text-left align-middle">
           <Image
             alt="logo-brand"
             width="52"

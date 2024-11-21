@@ -66,8 +66,11 @@ export default {
 			backgroundImage: {
 				'banner-image': 'url(https://theme-land.com/sapp/demo/assets/img/content/welcome-bg-3.jpg)',
 				'bg-overlay': 'linear-gradient(-47deg, #7c4fe0 0%, #4528DC 100%)',
-				'combined-banner': 'linear-gradient(-47deg, #7c4fe0 0%, #4528DC 100%), url(https://theme-land.com/sapp/demo/assets/img/content/welcome-bg-3.jpg)',
+				'combined-banner': 'url(https://theme-land.com/sapp/demo/assets/img/content/welcome-bg-3.jpg), linear-gradient(-47deg, #7c4fe0 0%, #4528DC 100%)',
 				'hover-btn': 'linear-gradient(135deg, #7c4fe0 10%, #4528DC)'
+			},
+			background: {
+				'bg-overlay': 'linear-gradient(-47deg, #7c4fe0 0%, #4528DC 100%)',
 			},
 			backgroundColor: {
 				'bg-header': 'rgba(255, 255, 255, 0.69)',
@@ -102,7 +105,7 @@ export default {
 				'top': '0',
 				'left': '0',
 				'opacity': ' 0.94',
-				'z-index': '-1',
+				'z-index': '0',
 			}
 		}
 	},
@@ -113,13 +116,15 @@ export default {
 		addUtilities({
 			'.has-overlay::after': {
 				position: 'absolute',
-				content: '""',
+				content: '" "',
 				height: '100%',
 				width: '100%',
 				top: '0',
 				left: '0',
 				opacity: '0.94',
-				zIndex: '-1',
+				zIndex: '0',
+				background: 'linear-gradient(-47deg, #7c4fe0 0%, #4528DC 100%)',
+
 			},
 			'.btn-right::after': {
 				position: 'absolute',
