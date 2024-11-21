@@ -10,6 +10,9 @@ export default {
 	],
 	theme: {
 		extend: {
+			container: {
+				center: true,
+			},
 			colors: {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
@@ -64,9 +67,11 @@ export default {
 				'banner-image': 'url(https://theme-land.com/sapp/demo/assets/img/content/welcome-bg-3.jpg)',
 				'bg-overlay': 'linear-gradient(-47deg, #7c4fe0 0%, #4528DC 100%)',
 				'combined-banner': 'linear-gradient(-47deg, #7c4fe0 0%, #4528DC 100%), url(https://theme-land.com/sapp/demo/assets/img/content/welcome-bg-3.jpg)',
+				'hover-btn': 'linear-gradient(135deg, #7c4fe0 10%, #4528DC)'
 			},
 			backgroundColor: {
 				'bg-header': 'rgba(255, 255, 255, 0.69)',
+				'bg-workfaster': '#F6F9FE',
 			},
 			keyframes: {
 				animateBounce: {
@@ -116,6 +121,18 @@ export default {
 				opacity: '0.94',
 				zIndex: '-1',
 			},
+			'.btn-right::after': {
+				position: 'absolute',
+				content: '" "',
+				height: '100%',
+				width: '100%',
+				top: '0',
+				left: '0',
+				borderRadius: '100px',
+				background: '#fff none repeat scroll 0 0',
+				transition: 'all 0.3s ease 0s',
+				zIndex: '-1',
+			}
 		});
 	},],
 } satisfies Config;
