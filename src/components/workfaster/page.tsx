@@ -38,12 +38,12 @@ const WorkFaster = () => {
   const { thumbnail2 } = assetsBgImage;
   return (
     <div className="bg-bg-workfaster">
-      <div className="max-w-[73.125rem] mx-auto flex items-center bg-fixed bg-cover bg-center py-[130]">
-        <div className="w-1/2">
+      <div className="max-w-[73.125rem] mx-auto flex items-center bg-fixed bg-cover bg-center py-[8.125rem]">
+        <div className="w-1/2 px-6">
           <Image alt="thumbnail2" width={549} height={302} src={thumbnail2} />
         </div>
-        <div className="w-1/2">
-          <p>Work faster with powerful filters</p>
+        <div className="w-1/2 px-6">
+          <p className='text-black font-bold mb-6 text-5xl leading-[1.2em]'>Work faster with powerful filters</p>
           <ul>
             {styleIconWorkFaster.map((item) => (
               <li className="flex items-center" key={item.id}>

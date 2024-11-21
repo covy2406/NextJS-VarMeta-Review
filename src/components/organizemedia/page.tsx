@@ -42,16 +42,16 @@ const OrganizeMedia = () => {
         <p className='text-black font-bold mb-6 text-5xl leading-[1.2em]'>Organize all your media content easily</p>
         <ul>
           {styleIcons.map((item) => (
-            <li className='flex items-center' key={item.id}>
-              <div className='my-6 mr-4 text-2xl rounded-sm shadow-md text-primary-color'>
+            <li className='flex my-8 items-center' key={item.id}>
+              <div className='mr-4 text-2xl rounded-sm shadow-md text-primary-color'>
                 <span className='flex items-center justify-center h-14 w-14'>{item.icon}</span>
               </div>
               <span className="text-md">{item.description}</span>
             </li>
           ))}
-          <button className='flex hover:bg-hover-btn hover:text-white hover:btn-right items-center py-4 px-[2.125rem] border border-solid rounded-full border-primary-color'>
-            <span className='mr-1 text-lg font-medium'>Learn More</span>
-            <RxArrowRight size={24}/>
+          <button className='flex hover:bg-hover-btn hover:text-white  items-center py-4 px-[2.125rem] border border-solid rounded-full border-primary-color'>
+            <span className='mr-1 text-lg font-medium btn-right'>Learn More</span>
+            <RxArrowRight size={28}/>
           </button>
         </ul>
       </div>
