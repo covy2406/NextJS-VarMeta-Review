@@ -1,13 +1,60 @@
-import React from 'react'
+"use client";
+import Image from "next/image";
+import Link from "next/link";
+import React, { useEffect } from "react";
+import { LuSearch } from "react-icons/lu";
+import { logo } from "../../../public/images/logo";
 
 const Header = () => {
+  const [scrolling, setScrolling] = React.useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <div>
-      <ul>
-        
+    <nav className="flex fixed bg-bg-header bg-scroll backdrop-blur-md animate-animate-header top-0 py-5 px-36 left-0 right-0 z-50 items-center justify-between h-[92px] uppercase">
+      <ul className="z-50">
+        <Link className="inline-block p-2 font-semibold" href={"/"}>
+          <Image alt="logo" width={52} height={52} src={logo} />
+        </Link>
       </ul>
-    </div>
-  )
-}
+      <ul className="hidden md:flex">
+        <Link className="inline-block p-2 mx-2 font-semibold" href={"/"}>
+          home
+        </Link>
+        <Link className="inline-block p-2 mx-2 font-semibold" href={"/feature"}>
+          feature
+        </Link>
+        <Link className="inline-block p-2 mx-2 font-semibold" href={"/page"}>
+          page
+        </Link>
+        <Link
+          className="inline-block p-2 mx-2 font-semibold"
+          href={"/screenshort"}
+        >
+          screenshort
+        </Link>
+        <Link className="inline-block p-2 mx-2 font-semibold" href={"/pricing"}>
+          pricing
+        </Link>
+        <Link className="inline-block p-2 mx-2 font-semibold" href={"/contact"}>
+          contact
+        </Link>
+      </ul>
+      <ul className="cursor-pointer">
+        <LuSearch />
+      </ul>
+    </nav>
+  );
+};
 
-export default Header
+export default Header;
