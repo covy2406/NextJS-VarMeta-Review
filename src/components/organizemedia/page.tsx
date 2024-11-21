@@ -35,13 +35,13 @@ export const styleIcons = [
 
 const OrganizeMedia = () => {
   return (
-    <div className='flex max-w-[1320px] w-full bg-fixed py-[130px] mx-auto'>
+    <div className='flex max-w-[1170px] w-full bg-fixed py-[130px] mx-auto'>
       <div className='w-1/2'>
         <p className='text-black font-bold mb-6 text-5xl leading-[1.2em]'>Organize all your media content easily</p>
         <ul>
           {styleIcons.map((item) => (
             <li className='flex items-center' key={item.id}>
-              <div className='my-6 mr-4 text-2xl rounded-sm shadow-md  text-primary-color'>
+              <div className='my-6 mr-4 text-2xl rounded-sm shadow-md text-primary-color'>
                 <span className='flex items-center justify-center h-14 w-14'>{item.icon}</span>
               </div>
               <span className="text-md">{item.description}</span>
