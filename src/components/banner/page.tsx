@@ -6,7 +6,7 @@ import Link from "next/link";
 const Banner = () => {
   return (
     <div className="relative bg-combined-banner has-overlay bg-cover bg-scroll bg-no-repeat bg-center h-full py-[130px]">
-      <div className="max-w-[1320px] flex mx-auto align-middle">
+      <div className="max-w-[1170px] flex mx-auto align-middle">
         <div className="relative z-10 w-1/2 px-2 animate-bounce">
           <Image
             className="align-middle "
