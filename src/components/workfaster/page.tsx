@@ -38,7 +38,7 @@ const WorkFaster = () => {
   const { thumbnail2 } = assetsBgImage;
   return (
     <div className="bg-bg-workfaster">
-      <div className="max-w-[73.125rem] mx-auto flex items-center bg-fixed bg-cover bg-center py-[8.125rem]">
+      <div className="container mx-auto flex items-center bg-fixed bg-cover bg-center py-[8.125rem]">
         <div className="w-1/2 px-6">
           <Image alt="thumbnail2" width={549} height={302} src={thumbnail2} />
         </div>

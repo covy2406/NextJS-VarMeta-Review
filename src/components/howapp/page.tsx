@@ -6,7 +6,7 @@ import { RiArrowRightSLine } from "react-icons/ri";
 const HowApp = () => {
   return (
     <div className="relative has-overlay arrow-right">
-      <div className="z-10 text-white py-[8.125rem] max-w-[73.125rem] mx-auto relative">
+      <div className="z-10 text-white py-[8.125rem] container mx-auto relative">
         <div className="text-center mx-auto w-[660px] mb-16">
           <p className="text-white font-bold mb-6 text-5xl leading-[1.2em]">
             How sApp works?

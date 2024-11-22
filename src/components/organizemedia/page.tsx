@@ -37,7 +37,7 @@ export const styleIcons = [
 const OrganizeMedia = () => {
   const { thumbnail1 } = assetsBgImage;
   return (
-    <div className='flex max-w-[73.125rem] w-full bg-fixed py-[8.125rem] mx-auto'>
+    <div className='flex container w-full bg-fixed py-[8.125rem] mx-auto'>
       <div className='w-1/2'>
         <p className='text-black font-bold mb-6 text-5xl leading-[1.2em]'>Organize all your media content easily</p>
         <ul>

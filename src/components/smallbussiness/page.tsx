@@ -6,7 +6,7 @@ import { listIcons } from '@/components/smallbussiness/constants/data';
 const SmallBussiness = () => {
   const {slide1} = assetsBgImage;
   return (
-    <div className='py-[8.125rem] max-w-[73.125rem] mx-auto'>
+    <div className='py-[8.125rem] container mx-auto'>
       <div className='text-center mx-auto w-[660px]'>
         <p className='text-black font-bold mb-6 text-5xl leading-[1.2em]'>Why Small Business Owner's Loves sApp</p>
         <p>Discover the unique features of sApp that set it apart from the competition, designed to deliver unmatched performance and seamless user experiences.</p>

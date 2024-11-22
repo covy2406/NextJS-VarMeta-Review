@@ -4,6 +4,7 @@ import Link from "next/link";
 import React, { useEffect } from "react";
 import { LuSearch } from "react-icons/lu";
 import assetsBgImage from "../../../public/images/logo";
+import { LuAlignJustify } from "react-icons/lu";
 
 const Header = () => {
   const { logo } = assetsBgImage;
@@ -22,7 +23,7 @@ const Header = () => {
     };
   }, []);
   return (
-    <nav className="flex fixed bg-bg-header bg-scroll backdrop-blur-md animate-animate-header top-0 py-5 px-36 left-0 right-0 z-50 items-center justify-between h-[92px] uppercase">
+    <nav className="flex fixed bg-bg-header bg-scroll backdrop-blur-md animate-animate-header top-0 py-5 px-36 md:px-6 sm:px-6 left-0 right-0 z-50 items-center justify-between h-[92px] uppercase">
       <ul className="z-50">
         <Link className="inline-block py-2 px-4 font-semibold" href={"/"}>
           <Image alt="logo" width={52} height={52} src={logo} />
@@ -51,8 +52,13 @@ const Header = () => {
           contact
         </Link>
       </ul>
-      <ul className="cursor-pointer">
-        <LuSearch />
+      <ul className="cursor-pointer flex items-center">
+        <li className="mr-8">
+        <LuSearch width={32} height={32} className="w-8 h-8"/>
+        </li>
+        <li className="md:flex">
+          <LuAlignJustify width={32} height={32} className="w-8 h-8"/>
+        </li>
       </ul>
     </nav>
   );
