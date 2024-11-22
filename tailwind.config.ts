@@ -67,10 +67,14 @@ export default {
 				'banner-image': 'url(https://theme-land.com/sapp/demo/assets/img/content/welcome-bg-3.jpg)',
 				'bg-overlay': 'linear-gradient(-47deg, #7c4fe0 0%, #4528DC 100%)',
 				'combined-banner': 'url(https://theme-land.com/sapp/demo/assets/img/content/welcome-bg-3.jpg), linear-gradient(-47deg, #7c4fe0 0%, #4528DC 100%)',
-				'hover-btn': 'linear-gradient(135deg, #7c4fe0 10%, #4528DC)'
+				'hover-btn': 'linear-gradient(135deg, #7c4fe0 10%, #4528DC)',
+				'bg-phonecase': 'url(https://theme-land.com/sapp/demo/assets/img/content/mobile-slider.png)',
 			},
-			background: {
-				'bg-overlay': 'linear-gradient(-47deg, #7c4fe0 0%, #4528DC 100%)',
+			backgroundRepeat: {
+				'bg-scroll': 'scroll',
+				'bg-no-repeat': 'no-repeat',
+				'bg-cover': 'cover',
+				'bg-center': 'center',
 			},
 			backgroundColor: {
 				'bg-header': 'rgba(255, 255, 255, 0.69)',
@@ -97,15 +101,8 @@ export default {
 				bounce: 'animateBounce 3s infinite',
 				'animate-header': '500ms ease-in-out 0s normal none 1 running fadeInDownHeader',
 			},
-			after: {
-				'position': 'absolute',
-				'content': '" "',
-				'height': '100%',
-				'width': '100%',
-				'top': '0',
-				'left': '0',
-				'opacity': ' 0.94',
-				'z-index': '0',
+			transfrom: {
+				'slide-transform': 'translate3d(-1205px, 0px, 0px)'
 			}
 		}
 	},
