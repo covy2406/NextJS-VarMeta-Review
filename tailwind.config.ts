@@ -134,6 +134,17 @@ export default {
 				background: '#fff none repeat scroll 0 0',
 				transition: 'all 0.3s ease 0s',
 				zIndex: '-1',
+			},
+			'.arrow-right::after': {
+				position: 'absolute',
+				content: '"\\f054"',
+				fontSize: '45px',
+				fontWeight: '900',
+				color: '#fff',
+				top: '50%',
+				right: '-1rem',
+				transform: 'translateY(-50%)',
+				transition: 'transform 0.3s',
 			}
 		});
 	},],
