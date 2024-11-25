@@ -56,7 +56,7 @@ const Header = () => {
         <li className="mr-8">
         <LuSearch width={32} height={32} className="w-8 h-8"/>
         </li>
-        <li className="md:flex">
+        <li className="md:flex xl:hidden lg:hidden">
           <LuAlignJustify width={32} height={32} className="w-8 h-8"/>
         </li>
       </ul>
