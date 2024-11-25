@@ -6,12 +6,12 @@ import WorkFaster from "@/components/workfaster/page";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Banner />
       <OrganizeMedia />
       <WorkFaster />
       <SmallBussiness />
       <HowApp />
-    </div>
+    </>
   );
 }
