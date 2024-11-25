@@ -30,7 +30,7 @@ export default function RootLayout({
       <body
         className={`${inter.className} antialiased`}
       >
-        <div className="relative w-full">
+        <div className="relative xl:w-full md:max-w-full">
           <Header />
         </div>
         {children}
