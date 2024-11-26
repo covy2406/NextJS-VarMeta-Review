@@ -5,7 +5,6 @@ import {
   FormControl,
   FormField,
   FormItem,
-  FormLabel,
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
@@ -26,7 +25,10 @@ export function StayForm() {
 
   const onSubmit = async (values: MessageSchemaType) => {
     console.log(values);
-    toast({ description: "Form submitted successfully" });
+    toast({
+      title: "Success",
+      description: "Submit successful",
+    })
   };
 
   return (
