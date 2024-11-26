@@ -1,9 +1,10 @@
-import Banner from "@/components/banner/page";
-import HowApp from "@/components/howapp/page";
-import OrganizeMedia from "@/components/organizemedia/page";
-import Simple from "@/components/simple/page";
-import SmallBussiness from "@/components/smallbussiness/page";
-import WorkFaster from "@/components/workfaster/page";
+import Banner from "@/components/banner";
+import HowApp from "@/components/howapp";
+import OrganizeMedia from "@/components/organizemedia";
+import Simple from "@/components/simple";
+import SmallBussiness from "@/components/smallbussiness";
+import Stay from "@/components/stay";
+import WorkFaster from "@/components/workfaster";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <SmallBussiness />
       <HowApp />
       <Simple />
+      <Stay />
     </>
   );
 }
