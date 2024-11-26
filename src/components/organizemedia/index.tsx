@@ -37,33 +37,39 @@ export const styleIcons = [
 
 const OrganizeMedia = () => {
   const { thumbnail1 } = assetsBgImage;
+
   return (
-    <div className="container mx-auto flex flex-col-reverse md:flex-row items-center bg-fixed bg-cover bg-center py-[8.125rem]">
-      <div className="flex-col w-full md:w-full xl:w-full px-6">
-        <p className="text-black text-center font-bold mb-6 text-5xl leading-[1.2em]">
+    <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center bg-fixed bg-cover bg-center py-16 px-4 sm:px-8 lg:px-12">
+      {/* Left Section */}
+      <div className="flex-col w-full lg:w-1/2 px-6">
+        <h2 className="text-black text-center lg:text-left font-bold mb-8 text-3xl sm:text-4xl md:text-5xl leading-snug">
           Organize all your media content easily
-        </p>
-        <ul>
+        </h2>
+        <ul className="space-y-8">
           {styleIcons.map((item) => (
-            <li className="flex my-8 items-center" key={item.id}>
-              <div className="mr-4 text-2xl rounded-sm shadow-md text-primary-color">
-                <span className="flex items-center justify-center h-14 w-14">
-                  {item.icon}
-                </span>
+            <li className="flex items-center" key={item.id}>
+              <div className="mr-6 text-2xl rounded-lg shadow-lg bg-gray-100 p-4 text-primary-color">
+                {item.icon}
               </div>
-              <span className="text-md">{item.description}</span>
+              <span className="text-md text-gray-700">{item.description}</span>
             </li>
           ))}
-          <button className="flex hover:bg-hover-btn hover:text-white text-center items-center py-4 px-[2.125rem] border border-solid rounded-full border-primary-color">
-            <span className="mr-1 text-lg font-medium btn-right">
-              Learn More
-            </span>
-            <RxArrowRight size={28} />
-          </button>
         </ul>
+        <button className="mt-8 flex items-center justify-center py-3 px-6 text-lg font-medium border border-primary-color text-primary-color rounded-full hover:bg-primary-color hover:text-white transition">
+          <span className="mr-2">Learn More</span>
+          <RxArrowRight size={24} />
+        </button>
       </div>
-      <div className="w-full md:w-full xl:w- flex items-center justify-center">
-        <Image alt="thumbnail1" width={561} height={414} src={thumbnail1} />
+
+      {/* Right Section */}
+      <div className="w-full lg:w-1/2 flex items-center justify-center mb-8 lg:mb-0">
+        <Image
+          alt="Organize Media Thumbnail"
+          width={561}
+          height={414}
+          src={thumbnail1}
+          className="rounded-lg shadow-lg"
+        />
       </div>
     </div>
   );

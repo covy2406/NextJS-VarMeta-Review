@@ -1,32 +1,63 @@
-import Image from 'next/image'
-import React from 'react'
-import assetsBgImage from '../../../public/images/logo'
-import { listIcons } from '@/components/smallbussiness/constants/data';
+import Image from "next/image";
+import React from "react";
+import assetsBgImage from "../../../public/images/logo";
+import { listIcons } from "@/components/smallbussiness/constants/data";
 
 const SmallBussiness = () => {
-  const {slide1} = assetsBgImage;
+  const { slide1 } = assetsBgImage;
+
   return (
-    <div className='bg-fixed bg-cover bg-center py-[8.125rem]'>
-      <div className='text-center mx-auto max-w-[660px]'>
-        <p className='text-black font-bold mb-6 text-5xl leading-[1.2em]'>Why Small Business Owner's Loves sApp</p>
-        <p>Discover the unique features of sApp that set it apart from the competition, designed to deliver unmatched performance and seamless user experiences.</p>
+    <div className="bg-fixed bg-cover bg-center py-16">
+      {/* Tiêu đề */}
+      <div className="text-center mx-auto max-w-[660px] px-4">
+        <h2 className="text-black font-bold mb-6 text-3xl sm:text-4xl md:text-5xl leading-snug">
+          Why Small Business Owner's Loves sApp
+        </h2>
+        <p className="text-gray-600 text-base sm:text-lg">
+          Discover the unique features of sApp that set it apart from the
+          competition, designed to deliver unmatched performance and seamless
+          user experiences.
+        </p>
       </div>
-      <div className="flex container mx-auto flex-col md:flex-row items-center w-full md:w-full xl:w-full mt-8 sm:w-full">
-        <div className='w-1/2 mn:w-[100%] sm:w-[100%]'>
-          <div className='bg-bg-phonecase bg-no-repeat bg-center bg-cover bg-scroll  transf pt-[4.1875rem] pr-[23px] pb-[5.625rem] pl-[26px] max-w-[18.125rem] mt-0 mx-auto overflow-hidden'>
-            <Image alt='slide1' width={230} height={428.66} src={slide1} />
+
+      {/* Nội dung chính */}
+      <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center mt-12 px-4">
+        {/* Hình ảnh bên trái */}
+        <div className="w-full lg:w-1/2 flex justify-center mb-8 lg:mb-0">
+          <div className="bg-bg-phonecase bg-no-repeat bg-center bg-cover pt-16 pr-6 pb-20 pl-6 max-w-[18.125rem] mx-auto overflow-hidden rounded-lg shadow-lg">
+            <Image
+              alt="slide1"
+              width={230}
+              height={428.66}
+              src={slide1}
+              className="rounded-lg"
+            />
           </div>
         </div>
-        <div className='w-1/2 mn:w-full sm:w-full mn:mt-4 sm:mt-4'>
-          <ul>
+
+        {/* Danh sách tính năng bên phải */}
+        <div className="w-full lg:w-1/2">
+          <ul className="space-y-6">
             {listIcons.map((item) => (
-              <li key={item.id} className='flex mb-4 gap-1'>
-                <div className='mr-4'>
-                  <Image className='mn:w-[3rem] mn:h-[3rem]' alt='icon1' width={50} height={50} src={item.icon} />
+              <li key={item.id} className="flex items-start gap-4">
+                {/* Icon */}
+                <div className="flex-shrink-0">
+                  <Image
+                    alt={item.title}
+                    width={50}
+                    height={50}
+                    src={item.icon}
+                    className="w-12 h-12 object-contain"
+                  />
                 </div>
-                <div className='text-left'>
-                  <p className='text-black font-bold text-2xl capitalize'>{item.title}</p>
-                  <p className='leading-6 break-words'>{item.description}</p>
+                {/* Nội dung */}
+                <div>
+                  <h3 className="text-black font-bold text-lg sm:text-xl capitalize mb-2">
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-700 text-sm sm:text-base leading-6">
+                    {item.description}
+                  </p>
                 </div>
               </li>
             ))}
@@ -34,7 +65,7 @@ const SmallBussiness = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default SmallBussiness
+export default SmallBussiness;

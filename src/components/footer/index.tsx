@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="grid xl:grid-cols-4 lg:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-8">
           {/* Logo và giới thiệu */}
           <div className="space-x-4">
-            <Link href="/" className="flex items-center mb-4">
+            <Link href="/" className="flex items-center ml-4 mb-4">
               <Image alt="logo" width={52} height={52} src={logo} />
             </Link>
             <p className="text-sm text-gray-600 mb-4">
