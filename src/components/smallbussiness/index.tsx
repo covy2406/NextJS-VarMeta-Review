@@ -24,7 +24,7 @@ const SmallBussiness = () => {
       <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center mt-12 px-4">
         {/* Hình ảnh bên trái */}
         <div className="w-full lg:w-1/2 flex justify-center mb-8 lg:mb-0">
-          <div className="bg-bg-phonecase bg-no-repeat bg-center bg-cover pt-16 pr-6 pb-20 pl-6 max-w-[18.125rem] mx-auto overflow-hidden rounded-lg shadow-lg">
+          <div className="bg-bg-phonecase bg-no-repeat bg-center bg-cover pt-16 pr-6 pb-20 pl-6 max-w-[18.125rem] mx-auto overflow-hidden rounded-lg">
             <Image
               alt="slide1"
               width={230}
