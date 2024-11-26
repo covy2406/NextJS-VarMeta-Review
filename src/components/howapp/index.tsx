@@ -1,7 +1,6 @@
 import { steplists } from "@/components/howapp/constants/data";
 import Image from "next/image";
 import React from "react";
-import { RiArrowRightSLine } from "react-icons/ri";
 
 const HowApp = () => {
   return (
