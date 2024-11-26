@@ -1,4 +1,5 @@
 import Banner from "@/components/banner";
+import Footer from "@/components/footer";
 import HowApp from "@/components/howapp";
 import OrganizeMedia from "@/components/organizemedia";
 import Simple from "@/components/simple";

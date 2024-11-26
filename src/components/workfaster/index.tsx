@@ -36,25 +36,33 @@ export const styleIconWorkFaster = [
 
 const WorkFaster = () => {
   const { thumbnail2 } = assetsBgImage;
+
   return (
-    <div className="bg-bg-workfaster">
-      <div className="container mx-auto flex flex-col-reverse md:flex-row items-center bg-fixed bg-cover bg-center py-[8.125rem]">
-        <div className="w-full smd:w-1/2 px-6">
-          <Image alt="thumbnail2" width={549} height={302} src={thumbnail2} />
+    <div className="bg-bg-workfaster py-16">
+      <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center bg-cover bg-center">
+        {/* Left Section */}
+        <div className="w-full lg:w-1/2 flex justify-center mb-8 lg:mb-0">
+          <Image
+            alt="thumbnail2"
+            width={549}
+            height={302}
+            src={thumbnail2}
+            className="rounded-lg shadow-lg"
+          />
         </div>
-        <div className="w-full smd:w-1/2 px-6 md:mb-4">
-          <p className="text-black text-center font-bold mb-6 text-5xl leading-[1.2em]">
+
+        {/* Right Section */}
+        <div className="w-full lg:w-1/2 px-6">
+          <h2 className="text-black text-center lg:text-left font-bold text-3xl sm:text-4xl md:text-5xl leading-snug mb-8">
             Work faster with powerful filters
-          </p>
-          <ul>
+          </h2>
+          <ul className="space-y-8">
             {styleIconWorkFaster.map((item) => (
               <li className="flex items-center" key={item.id}>
-                <div className="my-6 mr-4 text-2xl rounded-sm shadow-md text-primary-color">
-                  <span className="flex items-center justify-center h-14 w-14">
-                    {item.icon}
-                  </span>
+                <div className="mr-6 text-3xl text-primary-color flex items-center justify-center bg-gray-100 h-14 w-14 rounded-lg shadow-lg">
+                  {item.icon}
                 </div>
-                <p className="text-md">{item.description}</p>
+                <p className="text-md text-gray-700">{item.description}</p>
               </li>
             ))}
           </ul>
