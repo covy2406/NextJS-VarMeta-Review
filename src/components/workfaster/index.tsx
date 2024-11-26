@@ -39,9 +39,9 @@ const WorkFaster = () => {
 
   return (
     <div className="bg-bg-workfaster py-16">
-      <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center bg-cover bg-center">
+      <div className="container px-4 mx-auto grid xl:grid-cols-2 lg:grid-cols-1 items-center bg-cover bg-center">
         {/* Left Section */}
-        <div className="w-full lg:w-1/2 flex justify-center mb-8 lg:mb-0">
+        <div className="w-full lg:w-full flex justify-center mb-8 lg:mb-0">
           <Image
             alt="thumbnail2"
             width={549}
@@ -52,7 +52,7 @@ const WorkFaster = () => {
         </div>
 
         {/* Right Section */}
-        <div className="w-full lg:w-1/2 px-6">
+        <div className="w-full lg:w-full px-6">
           <h2 className="text-black text-center lg:text-left font-bold text-3xl sm:text-4xl md:text-5xl leading-snug mb-8">
             Work faster with powerful filters
           </h2>

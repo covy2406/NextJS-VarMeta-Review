@@ -100,7 +100,7 @@ export function StayForm() {
             </FormItem>
           )}
         />
-        <button className="flex md:py-2 md:px-3 bg-hover-btn text-white hover:text-white text-center items-center py-5 px-[2.125rem] border border-solid rounded-full border-primary-color">
+        <button className="flex xs:px-2 xs:py-1 md:py-2 md:px-3 bg-hover-btn text-white hover:text-white text-center items-center py-5 px-[2.125rem] border border-solid rounded-full border-primary-color">
           <span className="mr-1 text-lg font-medium btn-right">Submit message</span>
           <RxArrowRight size={28} />
         </button>

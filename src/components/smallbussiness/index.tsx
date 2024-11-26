@@ -37,7 +37,7 @@ const SmallBussiness = () => {
 
         {/* Danh sách tính năng bên phải */}
         <div className="w-full lg:w-1/2">
-          <ul className="space-y-6">
+          <ul className="space-y-6 px-3">
             {listIcons.map((item) => (
               <li key={item.id} className="flex items-start gap-4">
                 {/* Icon */}
