@@ -26,7 +26,7 @@ export const stayList = [
 const Stay = () => {
   return (
     <div className="bg-fixed bg-cover bg-center py-16 bg-[#F6F9FE]">
-      <div className="container mx-auto px-20 flex flex-col items-center">
+      <div className="container mx-auto flex flex-col items-center">
         {/* Section Title */}
         <div className="text-center mx-auto max-w-[660px] mb-12">
           <h2 className="text-black font-bold mb-6 text-4xl md:text-5xl leading-tight">
@@ -39,7 +39,7 @@ const Stay = () => {
         </div>
 
         {/* Content */}
-        <div className="grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 gap-8 w-full">
+        <div className="grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 smd:grid-cols-2 gap-8 w-full">
           {/* Left Content */}
           <div>
             <div className="mb-8">

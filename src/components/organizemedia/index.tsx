@@ -39,9 +39,9 @@ const OrganizeMedia = () => {
   const { thumbnail1 } = assetsBgImage;
 
   return (
-    <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center bg-fixed bg-cover bg-center py-16 px-4 sm:px-8 lg:px-12">
+    <div className="container mx-auto grid xl:grid-cols-2 lg:grid-cols-1 lg:flex-col-reverse items-center bg-fixed bg-cover bg-center py-16 px-4">
       {/* Left Section */}
-      <div className="flex-col w-full lg:w-1/2 px-6">
+      <div className="flex-col w-full lg:w-full px-6">
         <h2 className="text-black text-center lg:text-left font-bold mb-8 text-3xl sm:text-4xl md:text-5xl leading-snug">
           Organize all your media content easily
         </h2>
@@ -62,7 +62,7 @@ const OrganizeMedia = () => {
       </div>
 
       {/* Right Section */}
-      <div className="w-full lg:w-1/2 flex items-center justify-center mb-8 lg:mb-0">
+      <div className="w-full lg:w-full flex items-center justify-center mb-8 lg:mb-0">
         <Image
           alt="Organize Media Thumbnail"
           width={561}
