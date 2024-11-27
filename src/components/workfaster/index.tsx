@@ -39,9 +39,9 @@ const WorkFaster = () => {
 
   return (
     <div className="bg-bg-workfaster py-16">
-      <div className="container px-4 mx-auto grid xl:grid-cols-2 lg:grid-cols-1 items-center bg-cover bg-center">
+      <div className="container px-4 mx-auto grid xl:grid-cols-2 lg:grid-cols-1 gap-y-6 items-center bg-cover bg-center">
         {/* Left Section */}
-        <div className="w-full lg:w-full flex justify-center mb-8 lg:mb-0">
+        <div className="w-full lg:w-full flex justify-center mb-8">
           <Image
             alt="thumbnail2"
             width={549}
@@ -53,16 +53,16 @@ const WorkFaster = () => {
 
         {/* Right Section */}
         <div className="w-full lg:w-full px-6">
-          <h2 className="text-black text-center lg:text-left font-bold text-3xl sm:text-4xl md:text-5xl leading-snug mb-8">
+          <h2 className="text-black text-left font-bold text-[2rem] sm:text-4xl md:text-5xl leading-[1.2] mb-8">
             Work faster with powerful filters
           </h2>
           <ul className="space-y-8">
             {styleIconWorkFaster.map((item) => (
               <li className="flex items-center" key={item.id}>
-                <div className="mr-6 text-3xl text-primary-color flex items-center justify-center bg-gray-100 h-14 w-14 rounded-lg shadow-lg">
+                <div className="mr-6 text-3xl px-2 text-primary-color flex items-center justify-center bg-gray-100 h-14 w-14 rounded-lg shadow-lg">
                   {item.icon}
                 </div>
-                <p className="text-md text-gray-700">{item.description}</p>
+                <p className="text-md text-gray-700 leading-[1.4]">{item.description}</p>
               </li>
             ))}
           </ul>

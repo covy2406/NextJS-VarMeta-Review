@@ -39,7 +39,7 @@ const Stay = () => {
         </div>
 
         {/* Content */}
-        <div className="grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 smd:grid-cols-2 gap-8 w-full">
+        <div className="grid xl:grid-cols-2 gap-8 w-full">
           {/* Left Content */}
           <div>
             <div className="mb-8">

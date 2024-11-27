@@ -10,7 +10,7 @@ const Simple = () => {
   return (
     <div className="bg-fixed bg-cover bg-center py-[8.125rem] container mx-auto">
       <div className="text-center mx-auto max-w-[660px] mb-12">
-        <p className="text-black text-center font-bold mb-6 text-5xl leading-[1.2em]">
+        <p className="text-black text-center text-[2rem] font-semibold mb-6 leading-[1.2]">
           Frequently Asked Questions
         </p>
         <p>
