@@ -33,7 +33,7 @@ export function StayForm() {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="space-y-8 flex-shrink-0 max-w-xl w-full p-6 "
+        className="space-y-8 flex-shrink-0 max-w-xl w-full p-6 float-right"
       >
         {/* <h1 className="uppercase text-center">Login Form</h1> */}
         <FormField
