@@ -26,7 +26,7 @@ export const stayList = [
 const Stay = () => {
   return (
     <div className="bg-fixed bg-cover bg-center py-16 bg-[#F6F9FE]">
-      <div className="container mx-auto flex flex-col items-center">
+      <div className="container mx-auto px-8 flex flex-col items-center">
         {/* Section Title */}
         <div className="text-center mx-auto max-w-[660px] mb-12">
           <h2 className="text-black font-bold mb-6 text-4xl md:text-5xl leading-tight">
