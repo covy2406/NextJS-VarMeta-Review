@@ -11,7 +11,7 @@ export default {
 	theme: {
     	extend: {
     		screens: {
-					// 'custom-range': {'min': '425px', 'max': '625px'},
+					// 'custom-range': {'min': '426px', 'max': '627px'},
     			smn: '6.25rem',
     			xs: '20rem',
     			mn: '22.5rem',
@@ -19,8 +19,7 @@ export default {
     			md: '28rem',
     			smd: '30rem',
     			lg: '32rem',
-    			xl: '36rem',
-    			'2xl': '96rem',
+    			xl: '44rem',
     			'3xl': '48rem',
     			'4xl': '56rem',
     			'5xl': '64rem',

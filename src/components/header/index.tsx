@@ -20,7 +20,7 @@ const Header = () => {
       </Link>
 
       {/* Desktop Menu */}
-      <ul className="hidden custom-range:hidden md:flex space-x-6">
+      <ul className="hidden xl:flex space-x-6">
         <li>
           <Link href={"/"} className="hover:text-blue-500">
             Home
@@ -50,7 +50,7 @@ const Header = () => {
         </button>
         {/* Mobile Menu Toggle */}
         <button
-          className="text-xl md:hidden"
+          className="text-xl xl:hidden"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? <LuX /> : <LuAlignJustify />}
@@ -59,7 +59,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <ul className="absolute top-20 left-0 right-0 bg-gray-800 text-white flex flex-col space-y-4 py-4 px-6 lg:hidden md:hidden">
+        <ul className="absolute top-20 left-0 right-0 bg-gray-800 text-white flex flex-col space-y-4 py-4 px-6 xl:hidden">
           <li>
             <Link
               href={"/"}

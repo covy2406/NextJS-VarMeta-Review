@@ -11,12 +11,12 @@ const Footer = () => {
   const { ggColor, appColor } = logoColor;
 
   return (
-    <footer className="bg-gray-100">
-      <div className="container mx-auto sm:px-6 lg:px-8 py-12">
-        <div className="grid xl:grid-cols-4 lg:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-8">
+    <footer className="container mx-auto sm:px-6 lg:px-8 py-12">
+      {/* <div className="container mx-auto sm:px-6 lg:px-8 py-12"> */}
+        <div className="grid xl:grid-cols-4 lg:grid-cols-2 gap-8">
           {/* Logo và giới thiệu */}
-          <div className="space-x-4">
-            <Link href="/" className="flex items-center ml-4 mb-4">
+          <div className="space-y-4">
+            <Link href="/" className="flex items-center mb-4">
               <Image alt="logo" width={52} height={52} src={logo} />
             </Link>
             <p className="text-sm text-gray-600 mb-4">
@@ -157,7 +157,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
+      {/* </div> */}
     </footer>
   );
 };
