@@ -83,6 +83,7 @@ export default {
     			}
     		},
     		colors: {
+					// 'p': '#f6f9fe',
     			background: 'hsl(var(--background))',
     			foreground: 'hsl(var(--foreground))',
     			card: {
@@ -146,7 +147,8 @@ export default {
     			'bg-overlay': 'linear-gradient(-47deg, #7c4fe0 0%, #4528DC 100%)',
     			'combined-banner': 'url(https://theme-land.com/sapp/demo/assets/img/content/welcome-bg-3.jpg), linear-gradient(-47deg, #7c4fe0 0%, #4528DC 100%)',
     			'hover-btn': 'linear-gradient(135deg, #7c4fe0 10%, #4528DC)',
-    			'bg-phonecase': 'url(https://theme-land.com/sapp/demo/assets/img/content/mobile-slider.png)'
+    			'bg-phonecase': 'url(https://theme-land.com/sapp/demo/assets/img/content/mobile-slider.png)',
+					'bg-subscribe': 'url(	https://theme-land.com/sapp/demo/assets/img/content/map.png)',
     		},
     		backgroundRepeat: {
     			'bg-scroll': 'scroll',
