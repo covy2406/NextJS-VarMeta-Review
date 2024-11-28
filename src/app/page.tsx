@@ -6,6 +6,7 @@ import OrganizeMedia from "@/components/organizemedia";
 import Simple from "@/components/simple";
 import SmallBussiness from "@/components/smallbussiness";
 import Stay from "@/components/stay";
+import Subscribe from "@/components/subscribe";
 import WorkFaster from "@/components/workfaster";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <OpenMore />
       <HowApp />
       <Simple />
+      <Subscribe />
       <Stay />
     </>
   );

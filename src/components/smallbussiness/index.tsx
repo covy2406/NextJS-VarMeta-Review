@@ -28,7 +28,7 @@ const SmallBussiness = () => {
             <Image
               alt="slide1"
               width={230}
-              height={428.66}
+              height={429}
               src={slide1}
               className="rounded-lg"
             />
