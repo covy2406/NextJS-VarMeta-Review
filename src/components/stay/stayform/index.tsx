@@ -35,7 +35,7 @@ export function StayForm() {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="space-y-8 flex-shrink-0 max-w-xl w-full p-6 float-right"
+        className="space-y-8 flex-shrink-0 max-w-xl w-full float-right"
       >
         {/* <h1 className="uppercase text-center">Login Form</h1> */}
         <FormField
@@ -102,9 +102,9 @@ export function StayForm() {
             </FormItem>
           )}
         />
-        <button className="flex xs:px-2 xs:py-1 md:py-2 md:px-3 bg-hover-btn text-white hover:text-white text-center items-center py-5 px-[2.125rem] border border-solid rounded-full border-primary-color">
-          <span className="mr-1 text-lg font-medium btn-right">Submit message</span>
-          <RxArrowRight size={28} />
+        <button className="flex xs:px-2 xs:py-2 bg-hover-btn text-white hover:text-white text-center items-center py-5 px-[2.125rem] border border-solid rounded-full border-primary-color">
+          <span className="mr-1 text-md font-normal btn-right">Submit message</span>
+          <RxArrowRight size={20} />
         </button>
       </form>
     </Form>
