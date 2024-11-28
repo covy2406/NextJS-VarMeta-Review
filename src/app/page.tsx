@@ -1,6 +1,7 @@
 import Banner from "@/components/banner";
 import Footer from "@/components/footer";
 import HowApp from "@/components/howapp";
+import OpenMore from "@/components/openmore";
 import OrganizeMedia from "@/components/organizemedia";
 import Simple from "@/components/simple";
 import SmallBussiness from "@/components/smallbussiness";
@@ -14,6 +15,7 @@ export default function Home() {
       <OrganizeMedia />
       <WorkFaster />
       <SmallBussiness />
+      <OpenMore />
       <HowApp />
       <Simple />
       <Stay />
